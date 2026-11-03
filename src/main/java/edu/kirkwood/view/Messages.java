@@ -33,4 +33,12 @@ public class Messages {
     public static void fractionGoodbye() {
         displayMessage("Thank you for using Marc's Fraction Calculator");
     }
+
+    public static void loanGreet() {
+        displayMessage("Welcome to Ryan's Amortization Loan Calculator");
+    }
+
+    public static void  loanGoodbye() {
+        displayMessage("Thank you for using Ryan's Amortization Loan Calculator");
+    }
 }

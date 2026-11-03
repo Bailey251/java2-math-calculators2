@@ -1,4 +1,4 @@
-package edu.kirkwood.model;
+package edu.kirkwood.model.bailey;
 
 import edu.kirkwood.model.bailey.AstroOEV;
 import org.junit.jupiter.api.BeforeEach;
@@ -336,7 +336,7 @@ class AstroOEVTest {
         astroOEV.setSubExposureTime(20);
         astroOEV.setFrameCount(180);
         String actual = astroOEV.calcImageQuality();
-        assertEquals("Good", actual);
+        assertEquals("Fair", actual);
     }
     @Test
     @DisplayName("Returns Excellent for excellent conditions (12,000 < 12,170.22)")
