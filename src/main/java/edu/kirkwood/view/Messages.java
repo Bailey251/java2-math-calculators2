@@ -33,4 +33,21 @@ public class Messages {
     public static void fractionGoodbye() {
         displayMessage("Thank you for using Marc's Fraction Calculator");
     }
+
+    /**
+     * Displays the Half Life calculator's greeting message.
+     */
+    public static void halfLifeHello() {
+        System.out.println();
+        displayMessage("Welcome to Xavian's Half-Life Calculator!");
+        System.out.println("Select an option below to start:");
+    }
+
+    /**
+     * Displays the half life calculator's farewell message.
+     */
+    public static void halfLifeGoodbye() {
+        System.out.println();
+        displayMessage("Thank you for using Xavian's Half-Life Calculator.");
+    }
 }
