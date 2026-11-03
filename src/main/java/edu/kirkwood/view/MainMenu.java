@@ -1,5 +1,6 @@
 package edu.kirkwood.view;
 
+import edu.kirkwood.controller.issouf.RetirementCalculator;
 import edu.kirkwood.controller.marc.FractionCalculator;
 
 import static edu.kirkwood.view.UIUtility.printMenu;
@@ -10,7 +11,7 @@ public class MainMenu {
      * Displays the main menu and processes selections until the user quits.
      */
     public static void show() {
-        String[] menuItems = {"Marc's Fraction Calculator", "YOUR NAME AND CALCULATOR NAME HERE", "Quit"};
+        String[] menuItems = {"Marc's Fraction Calculator", "Issouf's Retirement Calculator", "Quit"};
         while(true) {
             printMenu("Main Menu", menuItems);
             int choice = getInt("Choose an option", true, 1, menuItems.length);
@@ -19,6 +20,7 @@ public class MainMenu {
                     FractionCalculator.start();
                     break;
                 case 2:
+                    RetirementCalculator.start();
                     break;
                 default:
                     return;
