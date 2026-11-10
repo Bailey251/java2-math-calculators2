@@ -1,5 +1,6 @@
 package edu.kirkwood.view;
 
+import edu.kirkwood.controller.issouf.RetirementCalculator;
 import edu.kirkwood.controller.marc.FractionCalculator;
 import edu.kirkwood.controller.ryan.LoanCalculator;
 import edu.kirkwood.controller.noah.InterestCalculatorController;
@@ -21,6 +22,7 @@ public class MainMenu {
             "Noah's Interest Calculator",
             "Ryan's Amortization Loan Calculator", 
             "Bailey's Astro OEV Calculator", 
+            "Issouf's Retirement Calculator", 
             "Quit"
           };
         while(true) {
@@ -44,6 +46,9 @@ public class MainMenu {
                     break;
                 case 6:
                     edu.kirkwood.controller.bailey.AstroOEVCalculator.start();
+                    break;
+                case 7:
+                    RetirementCalculator.start();
                     break;
                 default:
                     return;
