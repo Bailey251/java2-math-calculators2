@@ -20,6 +20,7 @@ public class MainMenu {
             "Masean's GPA Calculator",
             "Noah's Interest Calculator",
             "Ryan's Amortization Loan Calculator", 
+            "Bailey's Astro OEV Calculator", 
             "Quit"
           };
         while(true) {
@@ -40,6 +41,9 @@ public class MainMenu {
                     break;
                 case 5:
                     LoanCalculator.start();
+                    break;
+                case 6:
+                    edu.kirkwood.controller.bailey.AstroOEVCalculator.start();
                     break;
                 default:
                     return;
