@@ -1,4 +1,4 @@
-package edu.kirkwood.model;
+package edu.kirkwood.model.bailey;
 
 import edu.kirkwood.model.bailey.AstroOEV;
 import org.junit.jupiter.api.BeforeEach;

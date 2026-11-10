@@ -1,6 +1,7 @@
 package edu.kirkwood.view;
 
 import edu.kirkwood.controller.marc.FractionCalculator;
+import edu.kirkwood.controller.ryan.LoanCalculator;
 import edu.kirkwood.controller.noah.InterestCalculatorController;
 import edu.kirkwood.controller.masean.GPACalculator;
 import edu.kirkwood.controller.xavian.HalfLifeCalculator;
@@ -18,6 +19,7 @@ public class MainMenu {
             "Xavian's Half Life Calculator",
             "Masean's GPA Calculator",
             "Noah's Interest Calculator",
+            "Ryan's Amortization Loan Calculator", 
             "Quit"
           };
         while(true) {
@@ -35,6 +37,9 @@ public class MainMenu {
                     break;
                 case 4:
                     InterestCalculatorController.start();
+                    break;
+                case 5:
+                    LoanCalculator.start();
                     break;
                 default:
                     return;
