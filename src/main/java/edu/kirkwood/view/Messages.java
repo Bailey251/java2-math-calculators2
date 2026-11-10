@@ -135,6 +135,24 @@ public class Messages {
     }
 
     /**
+     * Displays instructions and greeting for using the Doomsday calculator.
+     */
+    public static void doomsdayGreet() {
+        displayMessage("Welcome to Evan's Doomsday Calculator");
+        System.out.println("Using Conway’s Doomsday algorithm, this calculator determines the day of the week for " +
+                "any given date and shows the steps used to calculate it.");
+        System.out.println("Enter a date in the format Month/Day/Year. For example, enter 4/4/2021 or 1/1/1.");
+    }
+
+    /**
+     * Displays the Doomsday calculator's farewell message.
+     */
+    public static void doomsdayGoodbye() {
+        System.out.println();
+        displayMessage("Thank you for using Evan's Doomsday Calculator");
+    }
+
+    /**
      * Displays the Half Life calculator's greeting message.
      */
     public static void halfLifeHello() {

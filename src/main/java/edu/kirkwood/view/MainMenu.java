@@ -5,6 +5,7 @@ import edu.kirkwood.controller.marc.FractionCalculator;
 import edu.kirkwood.controller.ryan.LoanCalculator;
 import edu.kirkwood.controller.noah.InterestCalculatorController;
 import edu.kirkwood.controller.masean.GPACalculator;
+import edu.kirkwood.controller.evan.DoomsdayCalculatorController;
 import edu.kirkwood.controller.xavian.HalfLifeCalculator;
 
 import static edu.kirkwood.view.UIUtility.printMenu;
@@ -23,6 +24,7 @@ public class MainMenu {
             "Ryan's Amortization Loan Calculator", 
             "Bailey's Astro OEV Calculator", 
             "Issouf's Retirement Calculator", 
+            "Evan's Doomsday Calculator",
             "Quit"
           };
         while(true) {
@@ -49,6 +51,9 @@ public class MainMenu {
                     break;
                 case 7:
                     RetirementCalculator.start();
+                    break;
+                case 8:
+                    DoomsdayCalculatorController.start();
                     break;
                 default:
                     return;
