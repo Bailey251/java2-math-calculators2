@@ -3,6 +3,7 @@ package edu.kirkwood.view;
 import edu.kirkwood.controller.marc.FractionCalculator;
 import edu.kirkwood.controller.noah.InterestCalculatorController;
 import edu.kirkwood.controller.masean.GPACalculator;
+import edu.kirkwood.controller.xavian.HalfLifeCalculator;
 
 import static edu.kirkwood.view.UIUtility.printMenu;
 import static edu.kirkwood.view.UserInput.getInt;
@@ -13,10 +14,11 @@ public class MainMenu {
      */
     public static void show() {
         String[] menuItems = {
-          "Marc's Fraction Calculator", 
-          "Masean's GPA Calculator", 
-          "Noah's Interest Calculator", 
-          "Quit"
+            "Marc's Fraction Calculator",
+            "Xavian's Half Life Calculator",
+            "Masean's GPA Calculator",
+            "Noah's Interest Calculator",
+            "Quit"
           };
         while(true) {
             printMenu("Main Menu", menuItems);
@@ -26,9 +28,12 @@ public class MainMenu {
                     FractionCalculator.start();
                     break;
                 case 2:
-                    GPACalculator.start();
+                    HalfLifeCalculator.start();
                     break;
                 case 3:
+                    GPACalculator.start();
+                    break;
+                case 4:
                     InterestCalculatorController.start();
                     break;
                 default:

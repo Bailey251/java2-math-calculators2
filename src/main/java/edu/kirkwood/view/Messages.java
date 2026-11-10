@@ -48,7 +48,7 @@ public class Messages {
     public static void interestGoodbye() {
         displayMessage("Thank you for using Noah's Interest Calculator.");
     }
-  
+
     /**
      * Displays instructions for using the GPA calculator.
      */
@@ -62,5 +62,22 @@ public class Messages {
      */
     public static void GPAGoodbye() {
         displayMessage("Thank you for using the GPA Calculator");
+    }
+
+    /**
+     * Displays the Half Life calculator's greeting message.
+     */
+    public static void halfLifeHello() {
+        System.out.println();
+        displayMessage("Welcome to Xavian's Half-Life Calculator!");
+        System.out.println("Select an option below to start:");
+    }
+
+    /**
+     * Displays the half life calculator's farewell message.
+     */
+    public static void halfLifeGoodbye() {
+        System.out.println();
+        displayMessage("Thank you for using Xavian's Half-Life Calculator.");
     }
 }
