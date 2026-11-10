@@ -50,4 +50,34 @@ public class Messages {
         System.out.println();
         displayMessage("Thank you for using Xavian's Half-Life Calculator.");
     }
+
+    /**
+     * Displays instructions for using the interest calculator.
+     */
+    public static void interestGreet() {
+        displayMessage("Welcome to Noah's Interest Calculator");
+        System.out.println("\nThis program calculates how much interest will be earned from a investment. Pick an investment type:\n");
+    }
+
+    /**
+     * Displays the interest calculator's farewell message.
+     */
+    public static void interestGoodbye() {
+        displayMessage("Thank you for using Noah's Interest Calculator.");
+    }
+  
+    /**
+     * Displays instructions for using the GPA calculator.
+     */
+    public static void GPAGreet() {
+        displayMessage("Welcome to Masean's GPA Calculator");
+        System.out.println("When prompted, carefully read the question and enter the requested information.\n");
+    }
+
+    /**
+     * Displays the GPA calculator's farewell message.
+     */
+    public static void GPAGoodbye() {
+        displayMessage("Thank you for using the GPA Calculator");
+    }
 }

@@ -330,7 +330,7 @@ class AstroOEVTest {
         assertEquals("Fair", actual);
     }
     @Test
-    @DisplayName("Returns Good for good conditions (2,400 < 2419.56")
+    @DisplayName("Returns good for good conditions (2,400 < 2419.56")
     void calcImageQualityGood(){
         astroOEV.setBortle(4);
         astroOEV.setSubExposureTime(20);
